@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B86AA33C-F046-0013-7F3F-6B85C0CB117B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE325_Missing_Required_Cryptographic_Step</RootNamespace>
+    <AssemblyName>CWE325_Missing_Required_Cryptographic_Step</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE325_Missing_Required_Cryptographic_Step.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_01.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_02.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_03.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_04.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_05.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_06.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_07.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_08.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_09.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_10.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_11.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_12.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_13.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_14.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_15.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_16.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__CryptoStream_17.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_01.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_02.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_03.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_04.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_05.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_06.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_07.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_08.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_09.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_10.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_11.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_12.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_13.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_14.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_15.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_16.cs" />
+    <Compile Include="CWE325_Missing_Required_Cryptographic_Step__StreamWriter_17.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

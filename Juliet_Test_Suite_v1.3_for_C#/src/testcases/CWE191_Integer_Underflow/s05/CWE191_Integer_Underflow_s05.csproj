@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{571BB040-0D4C-A07E-9544-F095B1DF811D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE191_Integer_Underflow_s05</RootNamespace>
+    <AssemblyName>CWE191_Integer_Underflow_s05</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE191_Integer_Underflow.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_01.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_02.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_03.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_04.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_05.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_06.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_07.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_08.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_09.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_10.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_11.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_12.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_13.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_14.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_15.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_16.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_17.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_21.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_22a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_22b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_31.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_41.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_42.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_45.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_51a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_51b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_52a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_52b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_52c.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_53a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_53b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_53c.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_53d.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_54a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_54b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_54c.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_54d.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_54e.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_61a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_61b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_66a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_66b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_67a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_67b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_68a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_68b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_71a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_71b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_72a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_72b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_73a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_73b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_74a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_74b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_75a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_75b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_81a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_81_bad.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_81_base.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_81_goodB2G.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_multiply_81_goodG2B.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_01.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_02.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_03.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_04.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_05.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_06.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_07.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_08.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_09.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_10.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_11.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_12.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_13.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_14.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_15.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_16.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_17.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_21.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_22a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_22b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_31.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_41.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_42.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_45.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_51a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_51b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_52a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_52b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_52c.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_53a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_53b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_53c.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_53d.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_54a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_54b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_54c.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_54d.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_54e.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_61a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_61b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_66a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_66b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_67a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_67b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_68a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_68b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_71a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_71b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_72a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_72b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_73a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_73b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_74a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_74b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_75a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_75b.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_81a.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_81_bad.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_81_base.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_81_goodB2G.cs" />
+    <Compile Include="CWE191_Integer_Underflow__UInt64_rand_sub_81_goodG2B.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

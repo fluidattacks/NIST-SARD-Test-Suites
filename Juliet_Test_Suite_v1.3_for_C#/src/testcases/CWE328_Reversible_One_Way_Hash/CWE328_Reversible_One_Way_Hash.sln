@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8F8F17AC-DFA0-91BA-0F5E-3DD9C4248681}") = "CWE328_Reversible_One_Way_Hash", "CWE328_Reversible_One_Way_Hash.csproj", "{1A064251-D5C6-731D-D303-E8B392FB8BCF}"
+EndProject
+Project("{8F8F17AC-DFA0-91BA-0F5E-3DD9C4248681}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A064251-D5C6-731D-D303-E8B392FB8BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A064251-D5C6-731D-D303-E8B392FB8BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A064251-D5C6-731D-D303-E8B392FB8BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A064251-D5C6-731D-D303-E8B392FB8BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

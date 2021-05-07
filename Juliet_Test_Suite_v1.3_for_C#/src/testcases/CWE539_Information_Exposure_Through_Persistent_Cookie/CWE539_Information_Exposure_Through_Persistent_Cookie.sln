@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E34B3B6D-B5A7-BC7A-7ADE-2AE74EE2B16F}") = "CWE539_Information_Exposure_Through_Persistent_Cookie", "CWE539_Information_Exposure_Through_Persistent_Cookie.csproj", "{2F64101A-4638-E8F6-150B-E0893F3B3A20}"
+EndProject
+Project("{E34B3B6D-B5A7-BC7A-7ADE-2AE74EE2B16F}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F64101A-4638-E8F6-150B-E0893F3B3A20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F64101A-4638-E8F6-150B-E0893F3B3A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F64101A-4638-E8F6-150B-E0893F3B3A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F64101A-4638-E8F6-150B-E0893F3B3A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

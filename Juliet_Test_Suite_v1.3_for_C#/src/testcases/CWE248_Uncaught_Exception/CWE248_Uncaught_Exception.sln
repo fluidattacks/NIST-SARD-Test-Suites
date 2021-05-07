@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{78BFD488-C510-F587-BB9D-645D403E6FE8}") = "CWE248_Uncaught_Exception", "CWE248_Uncaught_Exception.csproj", "{0113B5A2-BEFF-D7F8-1365-F320B09F9C3F}"
+EndProject
+Project("{78BFD488-C510-F587-BB9D-645D403E6FE8}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0113B5A2-BEFF-D7F8-1365-F320B09F9C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0113B5A2-BEFF-D7F8-1365-F320B09F9C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0113B5A2-BEFF-D7F8-1365-F320B09F9C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0113B5A2-BEFF-D7F8-1365-F320B09F9C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

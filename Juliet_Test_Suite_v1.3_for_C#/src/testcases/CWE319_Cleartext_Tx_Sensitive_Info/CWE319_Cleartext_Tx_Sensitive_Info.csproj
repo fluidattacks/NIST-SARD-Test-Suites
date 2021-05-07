@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81302E11-2267-8162-CC66-7201E0A2329A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE319_Cleartext_Tx_Sensitive_Info</RootNamespace>
+    <AssemblyName>CWE319_Cleartext_Tx_Sensitive_Info</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE319_Cleartext_Tx_Sensitive_Info.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_01.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_02.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_03.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_04.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_05.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_06.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_07.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_08.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_09.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_10.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_11.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_12.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_13.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_14.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_15.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_16.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_17.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_21.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_22a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_22b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_31.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_41.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_42.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_45.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_51a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_51b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_52a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_52b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_52c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_53a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_53b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_53c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_53d.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_54a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_54b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_54c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_54d.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_54e.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_61a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_61b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_66a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_66b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_67a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_67b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_68a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_68b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_71a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_71b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_72a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_72b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_73a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_73b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_74a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_74b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_75a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_75b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_81a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_81_bad.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_81_base.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_81_goodB2G.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_SqlConnection_81_goodG2B.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_01.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_02.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_03.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_04.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_05.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_06.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_07.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_08.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_09.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_10.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_11.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_12.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_13.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_14.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_15.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_16.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_17.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_21.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_22a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_22b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_31.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_41.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_42.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_45.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_51a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_51b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_52a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_52b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_52c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_53a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_53b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_53c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_53d.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_54a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_54b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_54c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_54d.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_54e.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_61a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_61b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_66a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_66b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_67a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_67b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_68a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_68b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_71a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_71b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_72a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_72b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_73a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_73b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_74a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_74b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_75a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_75b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_81a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_81_bad.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_81_base.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_81_goodB2G.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__listen_tcp_SqlConnection_81_goodG2B.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_01.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_02.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_03.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_04.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_05.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_06.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_07.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_08.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_09.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_10.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_11.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_12.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_13.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_14.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_15.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_16.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_17.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_21.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_22a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_22b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_31.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_41.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_42.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_45.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_51a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_51b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_52a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_52b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_52c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_53a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_53b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_53c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_53d.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_54a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_54b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_54c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_54d.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_54e.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_61a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_61b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_66a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_66b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_67a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_67b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_68a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_68b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_71a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_71b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_72a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_72b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_73a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_73b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_74a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_74b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_75a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_75b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_81a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_81_bad.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_81_base.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_81_goodB2G.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__NetClient_SqlConnection_81_goodG2B.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_01.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_02.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_03.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_04.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_05.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_06.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_07.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_08.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_09.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_10.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_11.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_12.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_13.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_14.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_15.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_16.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_17.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_21.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_22a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_22b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_31.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_41.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_42.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_45.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_51a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_51b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_52a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_52b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_52c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_53a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_53b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_53c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_53d.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_54a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_54b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_54c.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_54d.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_54e.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_61a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_61b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_66a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_66b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_67a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_67b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_68a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_68b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_71a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_71b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_72a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_72b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_73a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_73b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_74a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_74b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_75a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_75b.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_81a.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_81_bad.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_81_base.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_81_goodB2G.cs" />
+    <Compile Include="CWE319_Cleartext_Tx_Sensitive_Info__send_81_goodG2B.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

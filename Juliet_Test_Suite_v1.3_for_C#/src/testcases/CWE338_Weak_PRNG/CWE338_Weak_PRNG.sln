@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E50D9CBA-C4E3-1CFC-45F2-717FB77DD1CF}") = "CWE338_Weak_PRNG", "CWE338_Weak_PRNG.csproj", "{C8AC2C7A-EDB4-CA0C-80B7-C99A6EFA0864}"
+EndProject
+Project("{E50D9CBA-C4E3-1CFC-45F2-717FB77DD1CF}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8AC2C7A-EDB4-CA0C-80B7-C99A6EFA0864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8AC2C7A-EDB4-CA0C-80B7-C99A6EFA0864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8AC2C7A-EDB4-CA0C-80B7-C99A6EFA0864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8AC2C7A-EDB4-CA0C-80B7-C99A6EFA0864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

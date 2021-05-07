@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5EE6530-9E3D-B96A-D718-7BC92989DB7F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE476_NULL_Pointer_Dereference</RootNamespace>
+    <AssemblyName>CWE476_NULL_Pointer_Dereference</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE476_NULL_Pointer_Dereference.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_01.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_02.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_03.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_04.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_05.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_06.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_07.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_08.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_09.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_10.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_11.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_12.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_13.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_14.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_15.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_16.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__binary_if_17.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_01.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_02.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_03.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_04.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_05.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_06.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_07.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_08.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_09.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_10.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_11.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_12.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_13.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_14.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_15.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_16.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__deref_after_check_17.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_01.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_02.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_03.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_04.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_05.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_06.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_07.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_08.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_09.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_10.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_11.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_12.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_13.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_14.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_15.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_16.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_17.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_21.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_22a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_22b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_31.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_41.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_42.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_45.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_51a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_51b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_52a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_52b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_52c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_53a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_53b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_53c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_53d.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_54a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_54b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_54c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_54d.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_54e.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_61a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_61b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_66a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_66b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_67a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_67b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_68a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_68b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_71a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_71b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_72a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_72b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_73a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_73b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_74a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_74b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_75a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_75b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_81a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_81_bad.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_81_base.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_81_goodB2G.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__Integer_81_goodG2B.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_01.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_02.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_03.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_04.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_05.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_06.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_07.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_08.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_09.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_10.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_11.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_12.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_13.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_14.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_15.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_16.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_17.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_21.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_22a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_22b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_31.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_41.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_42.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_45.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_51a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_51b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_52a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_52b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_52c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_53a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_53b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_53c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_53d.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_54a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_54b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_54c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_54d.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_54e.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_61a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_61b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_67a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_67b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_68a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_68b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_71a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_71b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_72a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_72b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_73a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_73b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_74a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_74b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_75a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_75b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_81a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_81_bad.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_81_base.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_81_goodB2G.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__int_array_81_goodG2B.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_01.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_02.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_03.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_04.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_05.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_06.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_07.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_08.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_09.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_10.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_11.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_12.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_13.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_14.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_15.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_16.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__null_check_after_deref_17.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_01.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_02.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_03.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_04.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_05.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_06.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_07.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_08.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_09.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_10.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_11.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_12.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_13.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_14.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_15.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_16.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_17.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_21.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_22a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_22b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_31.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_41.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_42.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_45.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_51a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_51b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_52a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_52b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_52c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_53a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_53b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_53c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_53d.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_54a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_54b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_54c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_54d.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_54e.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_61a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_61b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_66a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_66b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_67a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_67b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_68a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_68b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_71a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_71b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_72a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_72b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_73a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_73b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_74a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_74b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_75a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_75b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_81a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_81_bad.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_81_base.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_81_goodB2G.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__StringBuilder_81_goodG2B.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_01.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_02.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_03.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_04.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_05.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_06.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_07.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_08.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_09.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_10.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_11.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_12.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_13.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_14.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_15.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_16.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_17.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_21.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_22a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_22b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_31.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_41.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_42.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_45.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_51a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_51b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_52a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_52b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_52c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_53a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_53b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_53c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_53d.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_54a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_54b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_54c.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_54d.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_54e.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_61a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_61b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_66a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_66b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_67a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_67b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_68a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_68b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_71a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_71b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_72a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_72b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_73a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_73b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_74a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_74b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_75a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_75b.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_81a.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_81_bad.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_81_base.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_81_goodB2G.cs" />
+    <Compile Include="CWE476_NULL_Pointer_Dereference__String_81_goodG2B.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

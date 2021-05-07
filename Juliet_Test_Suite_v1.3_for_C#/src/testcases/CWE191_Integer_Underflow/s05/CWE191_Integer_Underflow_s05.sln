@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{064C3A6C-0539-5B36-96D9-653C6B704EBA}") = "CWE191_Integer_Underflow_s05", "CWE191_Integer_Underflow_s05.csproj", "{571BB040-0D4C-A07E-9544-F095B1DF811D}"
+EndProject
+Project("{064C3A6C-0539-5B36-96D9-653C6B704EBA}") = "TestCaseSupport", "..\..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{571BB040-0D4C-A07E-9544-F095B1DF811D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571BB040-0D4C-A07E-9544-F095B1DF811D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571BB040-0D4C-A07E-9544-F095B1DF811D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571BB040-0D4C-A07E-9544-F095B1DF811D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

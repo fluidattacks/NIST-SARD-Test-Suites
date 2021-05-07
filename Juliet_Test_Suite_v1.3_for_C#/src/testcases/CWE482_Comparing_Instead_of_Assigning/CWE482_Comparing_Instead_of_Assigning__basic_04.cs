@@ -1,0 +1,87 @@
+/* TEMPLATE GENERATED TESTCASE FILE
+Filename: CWE482_Comparing_Instead_of_Assigning__basic_04.cs
+Label Definition File: CWE482_Comparing_Instead_of_Assigning__basic.label.xml
+Template File: point-flaw-04.tmpl.cs
+*/
+/*
+* @description
+* CWE: 482 Comparing Instead of Assigning
+* Sinks:
+*    GoodSink: Assigning
+*    BadSink : Comparing instead of assigning
+* Flow Variant: 04 Control flow: if(PRIVATE_CONST_TRUE) and if(PRIVATE_CONST_FALSE)
+*
+* */
+
+using TestCaseSupport;
+using System;
+
+namespace testcases.CWE482_Comparing_Instead_of_Assigning
+{
+class CWE482_Comparing_Instead_of_Assigning__basic_04 : AbstractTestCase
+{
+    /* The two variables below are declared "const", so a tool should
+     * be able to identify that reads of these will always return their
+     * initialized values.
+     */
+    private const bool PRIVATE_CONST_TRUE = true;
+    private const bool PRIVATE_CONST_FALSE = false;
+#if (!OMITBAD)
+    public override void Bad()
+    {
+        if (PRIVATE_CONST_TRUE)
+        {
+            int zeroOrOne = (new Random()).Next(2);
+            bool isZero = false;
+            if ((isZero == (zeroOrOne == 0)) == true) /* FLAW: should be (isZero = (zeroOrOne == 0)) */
+            {
+                IO.WriteLine("zeroOrOne is 0");
+            }
+            IO.WriteLine("isZero is: " + isZero);
+        }
+    }
+#endif //omitbad
+#if (!OMITGOOD)
+    /* Good1() changes PRIVATE_CONST_TRUE to PRIVATE_CONST_FALSE */
+    private void Good1()
+    {
+        if (PRIVATE_CONST_FALSE)
+        {
+            /* INCIDENTAL: CWE 561 Dead Code, the code below will never run */
+            IO.WriteLine("Benign, fixed string");
+        }
+        else
+        {
+            int zeroOrOne = (new Random()).Next(2);
+            bool isZero = false;
+            if ((isZero = (zeroOrOne == 0)) == true) /* FIX: correct assignment */
+            {
+                IO.WriteLine("zeroOrOne is 0");
+            }
+            IO.WriteLine("isZero is: " + isZero);
+        }
+    }
+
+    /* Good2() reverses the bodies in the if statement */
+    private void Good2()
+    {
+        if (PRIVATE_CONST_TRUE)
+        {
+            int zeroOrOne = (new Random()).Next(2);
+            bool isZero = false;
+            if ((isZero = (zeroOrOne == 0)) == true) /* FIX: correct assignment */
+            {
+                IO.WriteLine("zeroOrOne is 0");
+            }
+            IO.WriteLine("isZero is: " + isZero);
+        }
+    }
+
+    public override void Good()
+    {
+        Good1();
+        Good2();
+    }
+#endif //omitgood
+}
+}

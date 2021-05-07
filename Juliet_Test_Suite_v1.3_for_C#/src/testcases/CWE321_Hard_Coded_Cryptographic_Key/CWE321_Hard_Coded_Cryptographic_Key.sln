@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2A1BF761-F69E-06C9-EA8F-3FE69C7DB554}") = "CWE321_Hard_Coded_Cryptographic_Key", "CWE321_Hard_Coded_Cryptographic_Key.csproj", "{D626AECE-5EAB-35A2-21A2-A1462E66D7E4}"
+EndProject
+Project("{2A1BF761-F69E-06C9-EA8F-3FE69C7DB554}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D626AECE-5EAB-35A2-21A2-A1462E66D7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D626AECE-5EAB-35A2-21A2-A1462E66D7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D626AECE-5EAB-35A2-21A2-A1462E66D7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D626AECE-5EAB-35A2-21A2-A1462E66D7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A1C2367-8BA5-6A1F-8221-8B71536A2328}") = "CWE197_Numeric_Truncation_Error_s09", "CWE197_Numeric_Truncation_Error_s09.csproj", "{00D2E424-2518-2611-4A5C-78DFA3182A30}"
+EndProject
+Project("{9A1C2367-8BA5-6A1F-8221-8B71536A2328}") = "TestCaseSupport", "..\..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00D2E424-2518-2611-4A5C-78DFA3182A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D2E424-2518-2611-4A5C-78DFA3182A30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D2E424-2518-2611-4A5C-78DFA3182A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D2E424-2518-2611-4A5C-78DFA3182A30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

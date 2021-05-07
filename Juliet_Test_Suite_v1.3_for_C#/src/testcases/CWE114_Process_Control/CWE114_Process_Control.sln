@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{45CB8BC8-3254-C02F-66A3-AADD86E1EDC3}") = "CWE114_Process_Control", "CWE114_Process_Control.csproj", "{F64EAF7F-8687-765B-317C-37D60055994E}"
+EndProject
+Project("{45CB8BC8-3254-C02F-66A3-AADD86E1EDC3}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F64EAF7F-8687-765B-317C-37D60055994E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64EAF7F-8687-765B-317C-37D60055994E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64EAF7F-8687-765B-317C-37D60055994E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64EAF7F-8687-765B-317C-37D60055994E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

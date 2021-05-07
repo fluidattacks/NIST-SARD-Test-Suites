@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FDC8B78-4BA2-8D3C-5EB5-C510AD6530C5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE563_Assign_to_Variable_Without_Use</RootNamespace>
+    <AssemblyName>CWE563_Assign_to_Variable_Without_Use</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE563_Assign_to_Variable_Without_Use.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_81a.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_81_bad.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_81_base.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_int_81_goodB2G.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_81a.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_81_bad.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_81_base.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_long_81_goodB2G.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_StringBuilder_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_81a.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_81_bad.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_81_base.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_init_variable_string_81_goodB2G.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_int_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_long_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_StringBuilder_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_uninit_variable_string_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_81a.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_81_bad.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_81_base.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_81_goodB2G.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_int_81_goodG2B.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_81a.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_81_bad.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_81_base.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_81_goodB2G.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_long_81_goodG2B.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_StringBuilder_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_01.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_02.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_03.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_04.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_05.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_06.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_07.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_08.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_09.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_10.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_11.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_12.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_13.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_14.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_15.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_16.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_17.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_81a.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_81_bad.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_81_base.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_81_goodB2G.cs" />
+    <Compile Include="CWE563_Assign_to_Variable_Without_Use__unused_value_string_81_goodG2B.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

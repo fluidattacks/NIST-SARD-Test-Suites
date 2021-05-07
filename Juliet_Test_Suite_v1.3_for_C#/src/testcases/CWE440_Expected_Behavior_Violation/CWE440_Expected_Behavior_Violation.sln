@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{1AF521E3-574A-C4D3-3BFB-437DA9A4FEF6}") = "CWE440_Expected_Behavior_Violation", "CWE440_Expected_Behavior_Violation.csproj", "{76226A04-D5AE-C61E-3E2F-68E5EA71673C}"
+EndProject
+Project("{1AF521E3-574A-C4D3-3BFB-437DA9A4FEF6}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76226A04-D5AE-C61E-3E2F-68E5EA71673C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76226A04-D5AE-C61E-3E2F-68E5EA71673C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76226A04-D5AE-C61E-3E2F-68E5EA71673C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76226A04-D5AE-C61E-3E2F-68E5EA71673C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

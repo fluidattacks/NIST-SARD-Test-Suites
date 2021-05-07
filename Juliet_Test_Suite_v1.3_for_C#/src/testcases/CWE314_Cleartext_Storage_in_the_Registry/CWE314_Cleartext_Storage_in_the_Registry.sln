@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{DFE5D935-1927-87C5-38B2-206E74CFDE8E}") = "CWE314_Cleartext_Storage_in_the_Registry", "CWE314_Cleartext_Storage_in_the_Registry.csproj", "{3A74585C-E522-0858-49C4-CD56DB2A14D6}"
+EndProject
+Project("{DFE5D935-1927-87C5-38B2-206E74CFDE8E}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A74585C-E522-0858-49C4-CD56DB2A14D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A74585C-E522-0858-49C4-CD56DB2A14D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A74585C-E522-0858-49C4-CD56DB2A14D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A74585C-E522-0858-49C4-CD56DB2A14D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

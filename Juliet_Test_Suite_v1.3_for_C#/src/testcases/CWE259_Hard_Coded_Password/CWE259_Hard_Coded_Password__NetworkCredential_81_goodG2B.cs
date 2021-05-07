@@ -1,0 +1,41 @@
+/* TEMPLATE GENERATED TESTCASE FILE
+Filename: CWE259_Hard_Coded_Password__NetworkCredential_81_goodG2B.cs
+Label Definition File: CWE259_Hard_Coded_Password.label.xml
+Template File: sources-sink-81_goodG2B.tmpl.cs
+*/
+/*
+ * @description
+ * CWE: 259 Hard Coded Password
+ * BadSource: hardcodedPassword Set data to a hardcoded string
+ * GoodSource: Read data from the console using readLine()
+ * Sinks: NetworkCredential
+ *    BadSink : data used as password in NetworkCredential()
+ * Flow Variant: 81 Data flow: data passed in a parameter to an abstract method
+ *
+ * */
+#if (!OMITGOOD)
+
+using TestCaseSupport;
+using System;
+
+using System.Net;
+
+using System.IO;
+
+namespace testcases.CWE259_Hard_Coded_Password
+{
+class CWE259_Hard_Coded_Password__NetworkCredential_81_goodG2B : CWE259_Hard_Coded_Password__NetworkCredential_81_base
+{
+
+    public override void Action(string data )
+    {
+        if (data != null)
+        {
+            /* POTENTIAL FLAW: data used as password in NetworkCredential() */
+            NetworkCredential credentials = new NetworkCredential("user", data, "domain");
+            IO.WriteLine(credentials.ToString());
+        }
+    }
+}
+}
+#endif

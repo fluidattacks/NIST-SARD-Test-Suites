@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC1E794E-9406-8B78-66A0-CD958E97D4AF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE675_Duplicate_Operations_on_Resource</RootNamespace>
+    <AssemblyName>CWE675_Duplicate_Operations_on_Resource</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE675_Duplicate_Operations_on_Resource.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_01.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_02.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_03.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_04.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_05.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_06.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_07.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_08.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_09.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_10.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_11.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_12.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_13.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_14.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_15.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_16.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_17.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_21.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_22a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_22b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_31.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_41.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_42.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_45.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_51a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_51b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_52a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_52b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_52c.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_53a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_53b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_53c.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_53d.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_54a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_54b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_54c.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_54d.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_54e.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_61a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_61b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_66a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_66b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_67a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_67b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_68a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_68b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_71a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_71b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_72a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_72b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_73a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_73b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_74a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_74b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_75a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_75b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_81a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_81_bad.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_81_base.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_81_goodB2G.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__OpenText_81_goodG2B.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_01.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_02.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_03.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_04.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_05.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_06.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_07.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_08.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_09.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_10.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_11.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_12.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_13.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_14.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_15.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_16.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_17.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_21.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_22a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_22b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_31.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_41.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_42.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_45.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_51a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_51b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_52a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_52b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_52c.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_53a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_53b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_53c.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_53d.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_54a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_54b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_54c.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_54d.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_54e.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_61a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_61b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_66a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_66b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_67a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_67b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_68a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_68b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_71a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_71b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_72a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_72b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_73a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_73b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_74a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_74b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_75a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_75b.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_81a.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_81_bad.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_81_base.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_81_goodB2G.cs" />
+    <Compile Include="CWE675_Duplicate_Operations_on_Resource__StreamReader_81_goodG2B.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

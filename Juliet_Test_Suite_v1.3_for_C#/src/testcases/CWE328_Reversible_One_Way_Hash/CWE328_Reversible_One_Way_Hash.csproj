@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A064251-D5C6-731D-D303-E8B392FB8BCF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE328_Reversible_One_Way_Hash</RootNamespace>
+    <AssemblyName>CWE328_Reversible_One_Way_Hash</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE328_Reversible_One_Way_Hash.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_01.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_02.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_03.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_04.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_05.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_06.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_07.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_08.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_09.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_10.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_11.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_12.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_13.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_14.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_15.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_16.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__MD5_17.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_01.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_02.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_03.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_04.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_05.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_06.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_07.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_08.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_09.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_10.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_11.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_12.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_13.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_14.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_15.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_16.cs" />
+    <Compile Include="CWE328_Reversible_One_Way_Hash__SHA1_17.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

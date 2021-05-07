@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{482ABFD9-E344-B307-3FB1-67B3FA5BAC5E}") = "CWE643_Xpath_Injection", "CWE643_Xpath_Injection.csproj", "{11F432F6-4260-BFB4-9D2F-A032A7839E89}"
+EndProject
+Project("{482ABFD9-E344-B307-3FB1-67B3FA5BAC5E}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11F432F6-4260-BFB4-9D2F-A032A7839E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F432F6-4260-BFB4-9D2F-A032A7839E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F432F6-4260-BFB4-9D2F-A032A7839E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F432F6-4260-BFB4-9D2F-A032A7839E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

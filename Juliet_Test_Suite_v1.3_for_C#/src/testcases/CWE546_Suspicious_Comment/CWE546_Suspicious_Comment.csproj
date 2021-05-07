@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2393C409-0F10-3637-3431-5B826F1B8A2F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE546_Suspicious_Comment</RootNamespace>
+    <AssemblyName>CWE546_Suspicious_Comment</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE546_Suspicious_Comment.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE546_Suspicious_Comment__BUG_01.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_02.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_03.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_04.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_05.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_06.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_07.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_08.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_09.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_10.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_11.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_12.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_13.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_14.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_15.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_16.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__BUG_17.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_01.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_02.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_03.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_04.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_05.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_06.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_07.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_08.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_09.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_10.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_11.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_12.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_13.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_14.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_15.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_16.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__FIXME_17.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_01.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_02.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_03.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_04.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_05.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_06.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_07.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_08.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_09.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_10.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_11.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_12.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_13.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_14.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_15.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_16.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__HACK_17.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_01.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_02.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_03.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_04.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_05.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_06.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_07.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_08.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_09.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_10.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_11.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_12.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_13.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_14.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_15.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_16.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__LATER_17.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_01.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_02.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_03.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_04.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_05.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_06.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_07.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_08.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_09.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_10.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_11.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_12.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_13.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_14.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_15.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_16.cs" />
+    <Compile Include="CWE546_Suspicious_Comment__TODO_17.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

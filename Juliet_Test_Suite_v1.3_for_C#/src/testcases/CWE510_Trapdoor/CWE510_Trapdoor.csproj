@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5447727D-8A48-6B51-3B85-234FC651FD66}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE510_Trapdoor</RootNamespace>
+    <AssemblyName>CWE510_Trapdoor</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE510_Trapdoor.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_01.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_02.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_03.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_04.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_05.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_06.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_07.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_08.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_09.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_10.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_11.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_12.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_13.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_14.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_15.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_16.cs" />
+    <Compile Include="CWE510_Trapdoor__hostname_based_logic_17.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_01.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_02.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_03.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_04.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_05.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_06.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_07.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_08.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_09.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_10.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_11.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_12.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_13.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_14.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_15.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_16.cs" />
+    <Compile Include="CWE510_Trapdoor__ip_based_logic_17.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_01.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_02.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_03.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_04.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_05.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_06.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_07.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_08.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_09.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_10.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_11.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_13.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_14.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_15.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_16.cs" />
+    <Compile Include="CWE510_Trapdoor__network_connection_17.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_01.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_02.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_03.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_04.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_05.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_06.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_07.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_08.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_09.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_10.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_11.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_13.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_14.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_15.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_16.cs" />
+    <Compile Include="CWE510_Trapdoor__network_listen_17.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

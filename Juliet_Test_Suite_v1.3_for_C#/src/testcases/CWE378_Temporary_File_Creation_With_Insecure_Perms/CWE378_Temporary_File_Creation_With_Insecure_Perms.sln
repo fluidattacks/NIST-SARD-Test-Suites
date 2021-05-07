@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E94E1003-F4A5-D786-3E0A-5D46ECDCE4F3}") = "CWE378_Temporary_File_Creation_With_Insecure_Perms", "CWE378_Temporary_File_Creation_With_Insecure_Perms.csproj", "{3C04B379-4E99-4D97-2B4F-34EA89A62058}"
+EndProject
+Project("{E94E1003-F4A5-D786-3E0A-5D46ECDCE4F3}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C04B379-4E99-4D97-2B4F-34EA89A62058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C04B379-4E99-4D97-2B4F-34EA89A62058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C04B379-4E99-4D97-2B4F-34EA89A62058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C04B379-4E99-4D97-2B4F-34EA89A62058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

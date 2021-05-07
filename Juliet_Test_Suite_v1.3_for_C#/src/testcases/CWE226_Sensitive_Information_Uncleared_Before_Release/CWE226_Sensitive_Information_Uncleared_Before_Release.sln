@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{49903640-6AED-917E-8A2E-1EECF1A71586}") = "CWE226_Sensitive_Information_Uncleared_Before_Release", "CWE226_Sensitive_Information_Uncleared_Before_Release.csproj", "{065581FD-9FCF-437D-D015-C60092EA4E37}"
+EndProject
+Project("{49903640-6AED-917E-8A2E-1EECF1A71586}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{065581FD-9FCF-437D-D015-C60092EA4E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{065581FD-9FCF-437D-D015-C60092EA4E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{065581FD-9FCF-437D-D015-C60092EA4E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{065581FD-9FCF-437D-D015-C60092EA4E37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

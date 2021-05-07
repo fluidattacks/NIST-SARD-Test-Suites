@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A8518A96-29B9-49F6-0B56-6BE005C452BF}") = "CWE789_Uncontrolled_Mem_Alloc_s02", "CWE789_Uncontrolled_Mem_Alloc_s02.csproj", "{5FAD735A-55EC-7643-BE60-D60DC6C20D42}"
+EndProject
+Project("{A8518A96-29B9-49F6-0B56-6BE005C452BF}") = "TestCaseSupport", "..\..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FAD735A-55EC-7643-BE60-D60DC6C20D42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FAD735A-55EC-7643-BE60-D60DC6C20D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FAD735A-55EC-7643-BE60-D60DC6C20D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FAD735A-55EC-7643-BE60-D60DC6C20D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

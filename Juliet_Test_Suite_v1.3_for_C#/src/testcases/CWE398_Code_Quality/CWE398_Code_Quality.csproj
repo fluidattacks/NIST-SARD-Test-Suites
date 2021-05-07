@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{184AFC9E-8381-2C80-2003-9CCA7CC98375}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE398_Code_Quality</RootNamespace>
+    <AssemblyName>CWE398_Code_Quality</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE398_Code_Quality.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE398_Code_Quality__empty_block_01.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_02.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_03.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_04.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_05.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_06.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_07.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_08.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_09.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_10.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_11.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_12.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_13.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_14.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_15.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_16.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_block_17.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_01.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_02.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_03.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_04.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_05.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_06.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_07.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_08.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_09.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_10.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_11.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_12.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_13.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_14.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_15.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_16.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_case_17.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_01.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_02.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_03.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_04.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_05.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_06.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_07.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_08.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_09.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_10.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_11.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_12.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_13.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_14.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_15.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_16.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_else_17.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_01.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_02.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_03.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_04.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_05.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_06.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_07.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_08.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_09.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_10.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_11.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_12.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_13.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_14.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_15.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_16.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_for_17.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_function_01.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_01.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_02.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_03.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_04.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_05.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_06.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_07.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_08.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_09.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_10.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_11.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_12.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_13.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_14.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_15.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_16.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_if_17.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_01.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_02.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_03.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_04.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_05.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_06.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_07.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_08.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_09.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_10.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_11.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_12.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_13.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_14.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_15.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_16.cs" />
+    <Compile Include="CWE398_Code_Quality__empty_while_17.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_01.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_02.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_03.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_04.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_05.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_06.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_07.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_08.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_09.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_10.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_11.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_12.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_13.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_14.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_15.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_16.cs" />
+    <Compile Include="CWE398_Code_Quality__equals_17.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_01.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_02.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_03.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_04.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_05.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_06.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_07.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_08.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_09.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_10.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_11.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_12.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_13.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_14.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_15.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_16.cs" />
+    <Compile Include="CWE398_Code_Quality__semicolon_17.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

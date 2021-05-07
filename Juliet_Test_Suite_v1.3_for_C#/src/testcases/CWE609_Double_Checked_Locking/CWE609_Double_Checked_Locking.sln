@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{297CA73E-31F2-E9ED-C50A-6051319547D7}") = "CWE609_Double_Checked_Locking", "CWE609_Double_Checked_Locking.csproj", "{AC0A1962-B793-2255-ACE6-8FAFC043BF12}"
+EndProject
+Project("{297CA73E-31F2-E9ED-C50A-6051319547D7}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC0A1962-B793-2255-ACE6-8FAFC043BF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0A1962-B793-2255-ACE6-8FAFC043BF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0A1962-B793-2255-ACE6-8FAFC043BF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0A1962-B793-2255-ACE6-8FAFC043BF12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

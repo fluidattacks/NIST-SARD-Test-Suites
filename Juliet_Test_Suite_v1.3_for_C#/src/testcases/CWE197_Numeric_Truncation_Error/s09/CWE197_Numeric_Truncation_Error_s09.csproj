@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00D2E424-2518-2611-4A5C-78DFA3182A30}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE197_Numeric_Truncation_Error_s09</RootNamespace>
+    <AssemblyName>CWE197_Numeric_Truncation_Error_s09</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE197_Numeric_Truncation_Error.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_01.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_02.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_03.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_04.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_05.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_06.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_07.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_08.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_09.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_10.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_11.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_12.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_13.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_14.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_15.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_16.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_17.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_21.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_22a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_22b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_31.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_41.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_42.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_45.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_51a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_51b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_52a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_52b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_52c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_53a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_53b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_53c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_53d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_54a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_54b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_54c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_54d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_54e.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_61a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_61b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_66a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_66b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_67a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_67b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_68a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_68b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_71a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_71b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_72a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_72b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_73a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_73b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_74a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_74b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_75a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_75b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_81a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_81_bad.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_81_base.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_database_81_goodG2B.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_01.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_02.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_03.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_04.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_05.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_06.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_07.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_08.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_09.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_10.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_11.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_12.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_13.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_14.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_15.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_16.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_17.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_21.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_22a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_22b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_31.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_41.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_42.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_45.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_51a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_51b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_52a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_52b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_52c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_53a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_53b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_53c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_53d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_54a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_54b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_54c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_54d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_54e.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_61a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_61b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_66a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_66b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_67a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_67b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_68a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_68b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_71a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_71b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_72a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_72b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_73a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_73b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_74a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_74b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_75a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_75b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_81a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_81_bad.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_81_base.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_Environment_81_goodG2B.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_01.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_02.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_03.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_04.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_05.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_06.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_07.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_08.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_09.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_10.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_11.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_12.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_13.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_14.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_15.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_16.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_17.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_21.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_22a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_22b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_31.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_41.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_42.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_45.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_51a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_51b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_52a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_52b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_52c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_53a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_53b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_53c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_53d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_54a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_54b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_54c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_54d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_54e.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_61a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_61b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_66a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_66b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_67a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_67b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_68a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_68b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_71a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_71b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_72a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_72b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_73a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_73b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_74a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_74b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_75a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_75b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_81a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_81_bad.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_81_base.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_File_81_goodG2B.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_01.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_02.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_03.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_04.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_05.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_06.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_07.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_08.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_09.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_10.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_11.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_12.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_13.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_14.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_15.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_16.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_17.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_21.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_22a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_22b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_31.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_41.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_42.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_45.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_51a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_51b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_52a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_52b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_52c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_53a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_53b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_53c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_53d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_54a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_54b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_54c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_54d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_54e.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_61a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_61b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_66a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_66b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_67a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_67b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_68a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_68b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_71a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_71b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_72a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_72b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_73a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_73b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_74a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_74b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_75a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_75b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_81a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_81_bad.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_81_base.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_large_81_goodG2B.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_01.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_02.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_03.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_04.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_05.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_06.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_07.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_08.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_09.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_10.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_11.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_12.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_13.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_14.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_15.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_16.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_17.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_21.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_22a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_22b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_31.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_41.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_42.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_45.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_51a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_51b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_52a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_52b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_52c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_53a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_53b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_53c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_53d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_54a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_54b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_54c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_54d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_54e.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_61a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_61b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_66a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_66b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_67a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_67b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_68a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_68b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_71a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_71b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_72a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_72b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_73a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_73b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_74a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_74b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_75a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_75b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_81a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_81_bad.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_81_base.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_listen_tcp_81_goodG2B.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_01.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_02.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_03.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_04.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_05.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_06.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_07.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_08.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_09.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_10.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_11.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_12.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_13.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_14.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_15.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_16.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_17.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_21.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_22a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_22b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_31.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_41.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_42.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_45.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_51a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_51b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_52a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_52b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_52c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_53a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_53b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_53c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_53d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_54a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_54b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_54c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_54d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_54e.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_61a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_61b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_66a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_66b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_67a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_67b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_68a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_68b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_71a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_71b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_72a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_72b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_73a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_73b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_74a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_74b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_75a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_75b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_81a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_81_bad.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_81_base.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_NetClient_81_goodG2B.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_01.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_02.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_03.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_04.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_05.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_06.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_07.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_08.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_09.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_10.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_11.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_12.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_13.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_14.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_15.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_16.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_17.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_21.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_22a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_22b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_31.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_41.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_42.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_45.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_51a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_51b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_52a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_52b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_52c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_53a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_53b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_53c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_53d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_54a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_54b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_54c.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_54d.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_54e.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_61a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_61b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_66a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_66b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_67a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_67b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_68a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_68b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_71a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_71b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_72a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_72b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_73a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_73b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_74a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_74b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_75a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_75b.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_81a.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_81_bad.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_81_base.cs" />
+    <Compile Include="CWE197_Numeric_Truncation_Error__short_random_81_goodG2B.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

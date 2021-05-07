@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FDF064C2-81F2-8BDE-EB1E-AC70B3D43276}") = "CWE606_Unchecked_Loop_Condition", "CWE606_Unchecked_Loop_Condition.csproj", "{20CA4709-9B75-2D0D-8570-98013535EAB3}"
+EndProject
+Project("{FDF064C2-81F2-8BDE-EB1E-AC70B3D43276}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20CA4709-9B75-2D0D-8570-98013535EAB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CA4709-9B75-2D0D-8570-98013535EAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CA4709-9B75-2D0D-8570-98013535EAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CA4709-9B75-2D0D-8570-98013535EAB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

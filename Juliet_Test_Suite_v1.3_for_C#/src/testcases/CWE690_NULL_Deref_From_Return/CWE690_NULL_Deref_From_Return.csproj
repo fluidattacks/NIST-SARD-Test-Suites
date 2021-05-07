@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{694AAC24-CC20-9FBA-86F5-A0463C8FC37D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWE690_NULL_Deref_From_Return</RootNamespace>
+    <AssemblyName>CWE690_NULL_Deref_From_Return</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>testcases.CWE690_NULL_Deref_From_Return.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="NLog">
+      <HintPath>..\..\..\lib\NLog.dll</HintPath>
+    </Reference>
+	<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\..\..\lib\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+	<Reference Include="System.DirectoryServices">
+      <HintPath>..\..\..\lib\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+	<Reference Include="System.Web" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_Helper.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_01.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_02.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_03.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_04.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_05.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_06.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_07.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_08.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_09.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_10.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_11.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_12.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_13.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_14.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_15.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_16.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_17.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_21.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_22a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_22b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_31.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_41.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_42.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_45.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_51a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_51b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_52a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_52b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_52c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_53a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_53b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_53c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_53d.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_54a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_54b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_54c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_54d.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_54e.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_61a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_61b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_66a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_66b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_67a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_67b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_68a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_68b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_71a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_71b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_72a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_72b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_73a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_73b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_74a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_74b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_75a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_75b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_81a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_81_bad.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_81_base.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_81_goodB2G.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_StringBuilder_81_goodG2B.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_01.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_02.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_03.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_04.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_05.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_06.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_07.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_08.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_09.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_10.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_11.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_12.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_13.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_14.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_15.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_16.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_17.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_21.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_22a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_22b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_31.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_41.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_42.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_45.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_51a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_51b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_52a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_52b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_52c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_53a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_53b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_53c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_53d.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_54a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_54b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_54c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_54d.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_54e.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_61a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_61b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_66a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_66b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_67a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_67b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_68a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_68b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_71a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_71b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_72a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_72b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_73a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_73b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_74a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_74b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_75a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_75b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_81a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_81_bad.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_81_base.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_81_goodB2G.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__Class_string_81_goodG2B.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_01.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_02.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_03.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_04.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_05.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_06.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_07.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_08.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_09.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_10.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_11.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_12.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_13.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_14.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_15.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_16.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_17.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_21.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_22a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_22b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_31.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_41.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_42.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_45.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_51a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_51b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_52a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_52b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_52c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_53a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_53b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_53c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_53d.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_54a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_54b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_54c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_54d.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_54e.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_61a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_61b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_66a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_66b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_67a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_67b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_68a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_68b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_71a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_71b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_72a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_72b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_73a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_73b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_74a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_74b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_75a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_75b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_81a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_81_bad.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_81_base.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_81_goodB2G.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_equals_81_goodG2B.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_01.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_02.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_03.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_04.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_05.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_06.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_07.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_08.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_09.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_10.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_11.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_12.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_13.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_14.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_15.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_16.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_17.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_21.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_22a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_22b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_31.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_41.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_42.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_45.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_51a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_51b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_52a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_52b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_52c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_53a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_53b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_53c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_53d.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_54a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_54b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_54c.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_54d.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_54e.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_61a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_61b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_66a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_66b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_67a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_67b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_68a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_68b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_71a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_71b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_72a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_72b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_73a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_73b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_74a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_74b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_75a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_75b.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_81a.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_81_bad.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_81_base.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_81_goodB2G.cs" />
+    <Compile Include="CWE690_NULL_Deref_From_Return__getParameter_Web_trim_81_goodG2B.cs" />
+
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj">
+      <Project>{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}</Project>
+      <Name>TestCaseSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

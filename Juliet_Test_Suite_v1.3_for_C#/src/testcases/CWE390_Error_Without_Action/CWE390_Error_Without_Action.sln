@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{7152C3A8-B4FB-3307-B6D5-F4B78664E45C}") = "CWE390_Error_Without_Action", "CWE390_Error_Without_Action.csproj", "{3D03FF31-DB9C-A446-B0FC-7378DAEF9B4D}"
+EndProject
+Project("{7152C3A8-B4FB-3307-B6D5-F4B78664E45C}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D03FF31-DB9C-A446-B0FC-7378DAEF9B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D03FF31-DB9C-A446-B0FC-7378DAEF9B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D03FF31-DB9C-A446-B0FC-7378DAEF9B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D03FF31-DB9C-A446-B0FC-7378DAEF9B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

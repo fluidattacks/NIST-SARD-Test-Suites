@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2C4DC0D8-E1EF-61F9-B2E3-8C0F13E5821D}") = "CWE667_Improper_Locking", "CWE667_Improper_Locking.csproj", "{61770B68-D81A-5A86-B165-3B7FD5C91615}"
+EndProject
+Project("{2C4DC0D8-E1EF-61F9-B2E3-8C0F13E5821D}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61770B68-D81A-5A86-B165-3B7FD5C91615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61770B68-D81A-5A86-B165-3B7FD5C91615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61770B68-D81A-5A86-B165-3B7FD5C91615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61770B68-D81A-5A86-B165-3B7FD5C91615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

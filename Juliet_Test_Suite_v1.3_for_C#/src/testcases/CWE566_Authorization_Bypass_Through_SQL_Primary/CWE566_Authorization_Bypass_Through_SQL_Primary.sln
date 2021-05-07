@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E944E81D-6FD3-59B2-AA5B-7B84466A31DB}") = "CWE566_Authorization_Bypass_Through_SQL_Primary", "CWE566_Authorization_Bypass_Through_SQL_Primary.csproj", "{BD5C5FB6-5BCF-82CB-8E6F-599C5721D143}"
+EndProject
+Project("{E944E81D-6FD3-59B2-AA5B-7B84466A31DB}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD5C5FB6-5BCF-82CB-8E6F-599C5721D143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5C5FB6-5BCF-82CB-8E6F-599C5721D143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5C5FB6-5BCF-82CB-8E6F-599C5721D143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5C5FB6-5BCF-82CB-8E6F-599C5721D143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

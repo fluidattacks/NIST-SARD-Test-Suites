@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{99DA694F-A909-86C4-CDA8-B9810A29C4B7}") = "CWE379_Temporary_File_Creation_in_Insecure_Dir", "CWE379_Temporary_File_Creation_in_Insecure_Dir.csproj", "{A455D7CF-A712-CA00-1E2F-DFE7D40FFDD7}"
+EndProject
+Project("{99DA694F-A909-86C4-CDA8-B9810A29C4B7}") = "TestCaseSupport", "..\..\TestCaseSupport\TestCaseSupport\TestCaseSupport.csproj", "{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A455D7CF-A712-CA00-1E2F-DFE7D40FFDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A455D7CF-A712-CA00-1E2F-DFE7D40FFDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A455D7CF-A712-CA00-1E2F-DFE7D40FFDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A455D7CF-A712-CA00-1E2F-DFE7D40FFDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDBAE35-8CD1-4A0F-8912-B79D0BB43B83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
